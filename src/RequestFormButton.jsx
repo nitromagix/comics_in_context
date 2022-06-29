@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
+import StylesContext from "./StylesContext";
 
+function RequestFormButton() {
+   const buttonStyling = React.useContext(StylesContext);
 
-export default function RequestFormButton() {
-  return (
-    <div>
-      <button>
-        Click Here!
-      </button>
-      <input type="submit" value="Submit" />
-
-    </div>
-  );
+   return (
+      <div>
+         <button style={buttonStyling}>Click Here!</button>
+         <input style={buttonStyling} type="submit" value="Submit" />
+      </div>
+   );
 }
+export default RequestFormButton;
